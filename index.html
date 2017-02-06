@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Publish/Subcribe Design Pattern in JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="./libs/styles.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.18.1/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.18.1/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Welcome to People's bank!</h1>
+    </div>
+    <div id="sub-header">
+    </div>
+    <div id="input-interface">
+      <input id="holder-name" type="text" placeholder="Name"/>
+      <input id="holder-balance" type="text" placeholder="Balance"/>
+      <button id="add-record">Add Record</button>
+    </div>
+    <div id="content">
+      <table id="records">
+        <script id="records-template" type="text/template">
+			<tr>
+				{{#header}}
+					<th>{{.}}</th>
+				{{/header}}
+			</tr>
+			
+			{{#records}}
+				<tr>
+					<td>{{name}}</td>
+					<td>{{balance}}</td>
+					<td class='delete-button'></td>
+				</tr>
+			{{/records}}
+        </script>
+      </table>
+    </div>
+	<script src="./src/pub_sub_minireact.js"></script>
+    <script src="./src/TotalBalanceComponent.js"></script>
+    <script src="./src/BankRecordsComponent.js"></script>
+  </body>
+</html>

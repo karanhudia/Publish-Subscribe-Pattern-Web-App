@@ -1,0 +1,23 @@
+{
+  "name": "publish_subscribe_dp",
+  "version": "1.0.0",
+  "description": "Publish Subscribe pattern in JS",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "js",
+    "publish",
+    "subscribe",
+    "design",
+    "pattern",
+    "event",
+    "aggregator",
+    "mediator",
+    "pattern",
+    "javascript"
+  ],
+  "author": "Karan Hudia",
+  "license": "ISC"
+}
