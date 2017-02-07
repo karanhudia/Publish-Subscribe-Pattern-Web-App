@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: "Cabin", "Source Sans Pro", "Ubuntu Condensed", sans-serif;
 }
 #header {
   background-color: #0080ff;
@@ -21,16 +22,15 @@
   content:'\20B9';
 }
 #content {
-  background-color: #F4A460;
   max-width: 500px;
   margin: auto;
-  color: white;
 }
 #content table {
   font-size: 18px;
   width: 100%;
   text-align: center;
   border-collapse: collapse;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
 }
 #content table th:first-child {
 	width: 50%;
@@ -42,7 +42,8 @@
 	width: 10%;
 }
 #content table tr:first-child {
-  color: black;
+  color: white;
+  background-color: #F4A460;
 }
 tr {
   height: 40px;
@@ -56,6 +57,7 @@ tr td:nth-child(2):before {
 }
 tr:hover:not(:first-child) {
   background-color: #c3834c;
+  color: white;
 }
 tr:hover:not(:first-child) td:last-child:after {
   content: '\274C';
@@ -72,6 +74,7 @@ input {
   height: 100%;
   border: 1px solid #F4A460;
   padding-left: 10px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
 }
 button {
   height: calc(100% + 2px);
@@ -81,6 +84,7 @@ button {
   border: 1px solid #c3834c;
   border-radius: 0;
   float: right;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
 }
 button:hover {
   background-color: #c3834c;
