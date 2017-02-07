@@ -18,3 +18,4 @@ var pub_sub = {
     }
   }
 };
+export default pub_sub;

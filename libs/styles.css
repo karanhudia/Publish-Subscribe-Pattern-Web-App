@@ -65,20 +65,22 @@ tr:hover:not(:first-child) td:last-child:after {
   margin: auto;
   height: 40px;
   width: 500px;
+  display: flex;
+  justify-content: space-between;
 }
 input {
   height: 100%;
-  border: 1px solid #0080ff;
+  border: 1px solid #F4A460;
   padding-left: 10px;
-  margin: 0px 6px;
 }
 button {
   height: calc(100% + 2px);
   color: white;
   background-color: #F4A460;
   width: 100px;
-  border: none;
+  border: 1px solid #c3834c;
   border-radius: 0;
+  float: right;
 }
 button:hover {
   background-color: #c3834c;
